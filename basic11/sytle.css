@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grid는 flex보다 나중에 나왔음
+flex는 항방향 배치를 구현하는것
+grid는 두방향 배치 구현
+두개를 다 안다면 알맞은 곳에 사용할 수 있다
+전체구성은 grid로 하고 부분구성은 flex로 하는 경우가 많다 */
+
+
+.container{
+    border: 2px solid #000;
+    background-color: rosybrown;
+    padding: 10px;
+}
+
+.item{
+    border: 2px solid #000;
+    background-color: darkkhaki;
+    padding: 10px;
+}
+/* align-irems */
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 120vh;
+    justify-items: stretch;
+    justify-items: start;
+    justify-items: center;
+    justify-items: end;
+
+}
+.item{
+    
+}
